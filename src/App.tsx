@@ -1,7 +1,5 @@
-//import { useEffect } from "react";
-//import { useRef } from "react";
-//import { useParams } from "react-router-dom";
-// import { useState } from "react";
+import React from "react";
+import Library from "./components/Library";
 import Booklist from "./components/Booklist";
 import Header from "./components/Header";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -13,6 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Booklist />} />
+          <Route path="/library" element={<Library />} />
         </Routes>
       </div>
     </BrowserRouter>

@@ -7,7 +7,6 @@ const Kakao = axios.create({
   },
 });
 
-// search book api
 export const bookSearch = (params: {
   query: any;
   sort: string;
@@ -17,7 +16,6 @@ export const bookSearch = (params: {
   return Kakao.get("/v3/search/book?target=title", { params });
 };
 
-// book api
 export const book = () => {
   return Kakao.get("/v3/search/book?target=title");
 };
